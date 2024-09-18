@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: #d5e1ef;
+      font-size:15px;
+      font-family: 'Outfit';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+    }
+    .qr-block{
+      display:flex;
+      flex-direction: column;
+      margin:auto;
+      padding:auto;
+      position:relative;
+      background-color: white;
+      max-width:450px;
+      border-radius:12px;
+      box-shadow:2px 2px 12px grey;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .qr-block .qr-img{
+      margin:20px;
+      border-radius:12px;
+     max-width:90%;
+
+    }
+    .qr-content{
+      margin:10px;
+      text-align: center;
+      padding-bottom: 30px;
+      max-width:80%;
+    }
+
+    @media screen and (max-width: 480px){
+      .qr-block{
+        margin:20px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="qr-block">
+  <img class = "qr-img" src = "./images/image-qr-code.png" alt = "qr-image"> 
+  <div class="qr-content"><h1>Improve your front-end skills by building projects</h1>
+
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/YashaswiniJakkam">Yashaswini Jakkam</a>.
+  </div></div>
+</div>
+</body>
+</html>
